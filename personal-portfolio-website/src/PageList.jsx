@@ -13,7 +13,7 @@ function PageList() {
         <>
             <div className="application">
                 <Navigation />
-                <hr />
+                <br />
                 <Routes>
                     <Route path="/" element={<AboutMe />} />
                     <Route path="/personal/projects" element={<PersonalProjects />}/>

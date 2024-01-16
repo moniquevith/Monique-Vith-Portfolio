@@ -51,3 +51,68 @@
 .blue {
     color: #0392F2;
 }
+
+.about-me-description {
+    display: inline-flex;
+    align-items: center;
+}
+
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 27px;
+}
+
+.welcome-header {
+    color: #A3A3A3;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.intro-1 {
+    color: var(--White, #FFF);
+    font-family: Manrope;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.intro-2 {
+    color: #0392F2;
+    font-family: Manrope;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.intro-3 {
+    width: 740px;
+    color: var(--Text-Color, #A3A3A3);
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.download-resume {
+    border-radius: 20px;
+    background: #3E3E42;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
