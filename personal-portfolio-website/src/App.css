@@ -116,3 +116,10 @@
     font-weight: 400;
     line-height: normal;
 }
+
+.headshot {
+    background: url('./images/headshot.png');
+    border: none;
+    width: 399.42px;
+    height: 463.505px;
+}

@@ -17,7 +17,7 @@ function AboutMe() {
                     <button className="download-resume">Download Resume</button>
                 </div>
                 <div>
-                    pic here
+                    <img className="headshot"/>
                 </div>
             </div>
         </>
