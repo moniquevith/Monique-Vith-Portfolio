@@ -30,6 +30,34 @@ function AboutMe() {
                         <div className="FF-logo"></div>
                         <div className="FF-title">Fitness Forum Health Club</div>
                     </div>
+                    <div className="FF-role">Sales/Receptionist</div>
+                    <ul className="FF-role-descrriptions">
+                        <li className="FF-description">Generating new sales opportunities by approaching walk-ins, cold calling, networking and marketing.</li>
+                        <li className="FF-description">Preparing regular reports for the sales manager summarising progress against KPIs</li>
+                    </ul>
+                </div>
+
+                <div className="MEA-flex-box">
+                    <div className="MEA-header">
+                        <div className="MEA-logo"></div>
+                        <div className="MEA-title">Marc Edward Agency</div>
+                    </div>
+                    <div className="MEA-role">Fragrance Sales Associate</div>
+                    <ul className="MEA-role-descrriptions">
+                        <li className="MEA-description">Meeting sales targets by actively engaging customers, demonstrating the features of different fragrances, and persuading them to make purchases. This also involves maintaining a focus on key performance indicators (KPIs) and regularly checking progress toward sales goals.</li>
+                    </ul>
+                </div>
+
+                <div className="MEA-flex-box">
+                    <div className="MEA-header">
+                        <div className="MEA-logo"></div>
+                        <div className="MEA-title">Robogals UNSW</div>
+                    </div>
+                    <div className="MEA-role">Executive Marketing Manager</div>
+                    <ul className="MEA-role-descrriptions">
+                        <li className="MEA-description">Managed a sub-committee marketing team in creating content to advertise and promote Robogals events and brand in aims to encourage women in STEM fields. </li>
+                        <li className="MEA-description">Robogals has over 600+ members in the society </li>
+                    </ul>
                 </div>
             </div>
         </>
