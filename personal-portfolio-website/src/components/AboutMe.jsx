@@ -1,8 +1,13 @@
 import React from "react";
 
 import '../App.css'
+import { useState, useEffect } from "react";
 
 function AboutMe() {
+    const [programming, setProgramming] = useState();
+    const [frameworks, setFrameworks] = useState();
+    const [personal, setPersonal] = useState();
+
     return (
         <>
             <div className="about-me-description">
