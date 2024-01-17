@@ -20,6 +20,18 @@ function AboutMe() {
                     <img className="headshot"/>
                 </div>
             </div>
+            <div className="experience-group-header">
+                <div className="separator"></div>
+                <div className="experience-header">My Experience</div>
+            </div>
+            <div className="experience-descriptions">
+                <div className="FF-flex-box">
+                    <div className="FF-header">
+                        <div className="FF-logo"></div>
+                        <div className="FF-title">Fitness Forum Health Club</div>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
