@@ -287,3 +287,199 @@
     margin: 0 0 10px 20px;
     width: 450px;
 }
+
+.Robo-flex-box {
+    width: 550px;
+    height: 289px;
+    flex-shrink: 0;
+    background-color: #3E3E42;
+    display: flex;
+    flex-direction: column;
+}
+
+.Robo-header {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0 10px 20px;
+    width: 406px;
+    height: 46px;
+    gap: 20px;
+}
+
+.Robo-logo {
+    width: 80px;
+    height: 46px;
+    flex-shrink: 0;
+    background: url('./images/Robogals_Logo.svg.png');
+    background-repeat: no-repeat;
+    background-size: 70px 40px;
+}
+
+.Robo-title {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Robo-role {
+    width: 484px;
+    height: 22px;
+    flex-shrink: 0;
+    color: var(--White, #FFF);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 0 0 10px 20px;
+}
+
+.Robo-role-descrriptions {
+    margin: 0;
+}
+
+.Robo-description {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 10px 20px;
+    width: 450px;
+}
+
+.skills-group-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 1120px;
+    margin-top: 100px;
+}
+
+.skills-header {
+    color: var(--White, #FFF);
+    font-family: Manrope;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.skills-categories {
+    display: flex;
+    flex-direction: row;
+    width: 1120px;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.programming-button {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: #0392F2;
+}
+
+.frameworks-button {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: #3E3E42;
+}
+
+.personal-skills-button {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: #3E3E42;
+}
+
+
+.skills-descriptions {
+    width: 1120px;
+    height: 220px;
+    flex-shrink: 0;
+    background-color: #3E3E42;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.programming-qualifications {
+    height: 180px;
+    width: 152px;
+}
+
+.skills-text {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style-type: none;
+}
+
+.python-logo {
+    background-image: url(./images/Python-logo-notext.svg.png);
+    background-repeat: no-repeat; 
+    background-position: left;
+    background-size: 30px;
+    padding: 0px 0px 0px 40px;
+}
+
+.js-logo {
+    background-image: url(./images/javascript-logo-png.png);
+    background-repeat: no-repeat; 
+    background-position: left;
+    background-size: 30px;
+    padding: 0px 0px 0px 40px;
+}
+
+.c-logo {
+    background-image: url(./images/C_Programming_Language.svg.png);
+    background-repeat: no-repeat; 
+    background-position: left;
+    background-size: 30px;
+    padding: 0px 0px 0px 40px;
+}
+
+.sql-logo {
+    background-image: url(./images/Postgresql_elephant.svg.png);
+    background-repeat: no-repeat; 
+    background-position: left;
+    background-size: 30px;
+    padding: 0px 0px 0px 40px;
+}
+
+.html-logo {
+    background-image: url(./images/HTML5_logo.png);
+    background-repeat: no-repeat; 
+    background-position: left;
+    background-size: 30px;
+    padding: 0px 0px 0px 40px;
+}
+
+.css-logo {
+    background-image: url(./images/CSS-Logo\ 1.png);
+    background-repeat: no-repeat; 
+    background-position: left;
+    background-size: 30px;
+    padding: 0px 0px 0px 40px;
+}
