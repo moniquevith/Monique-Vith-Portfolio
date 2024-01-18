@@ -413,18 +413,20 @@
     height: 220px;
     flex-shrink: 0;
     background-color: #3E3E42;
-    margin-bottom: 30px;
+    margin-bottom: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 200px;
+    column-gap: 200px;
+    padding: 20px 0 20px 0;
 }
 
 .programming-qualifications {
     height: 180px;
     width: 152px;
+    padding-inline-start: 0;
 }
 
 .skills-text {
@@ -435,7 +437,7 @@
     font-weight: 400;
     line-height: normal;
     list-style-type: none;
-    margin: 30px 0 30px 0;
+    margin: 0 0 30px 0;
 }
 
 .python-logo {
@@ -486,4 +488,93 @@
     background-position: left;
     background-size: 30px;
     padding: 0px 0px 0px 40px;
+}
+
+.frameworks-qualifications {
+    height: 180px;
+    width: 152px;
+    margin: 0;
+}
+
+.vscode-logo {
+    background-image: url(./images/vscode.png);
+    background-repeat: no-repeat; 
+    background-position: left;
+    background-size: 30px;
+    padding: 0px 0px 0px 40px;
+}
+
+.microsoft-logo {
+    background-image: url(./images/Microsoft_icon\ 1.png);
+    background-repeat: no-repeat; 
+    background-position: left;
+    background-size: 30px;
+    padding: 0px 0px 0px 40px;
+}
+
+.github-logo {
+    background-image: url(./images/github.png);
+    background-repeat: no-repeat; 
+    background-position: left;
+    background-size: 30px;
+    padding: 0px 0px 0px 40px;
+}
+
+.gitlab-logo {
+    background-image: url(./images/gitlab.png);
+    background-repeat: no-repeat; 
+    background-position: left;
+    background-size: 30px;
+    padding: 0px 0px 0px 40px;
+}
+
+.reactjs-logo {
+    background-image: url(./images/React-icon\ 1.png);
+    background-repeat: no-repeat; 
+    background-position: left;
+    background-size: 30px;
+    padding: 0px 0px 0px 40px;
+}
+
+.figma-logo {
+    background-image: url(./images/figma.png);
+    background-repeat: no-repeat; 
+    background-position: left;
+    background-size: 30px;
+    padding: 0px 0px 0px 40px;
+}
+
+.materialui-logo {
+    background-image: url(./images/materialui.png);
+    background-repeat: no-repeat; 
+    background-position: left;
+    background-size: 30px;
+    padding: 0px 0px 0px 40px;
+}
+
+.canva-logo {
+    background-image: url(./images/canva-icon.png);
+    background-repeat: no-repeat; 
+    background-position: left;
+    background-size: 30px;
+    padding: 0px 0px 0px 40px;
+}
+
+.personal-qualifications {
+    height: 180px;
+    width: 152px;
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+.personal-skills-text {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style-type: none;
+    margin: 0 10px 40px 0;
+    width: 250px;
 }

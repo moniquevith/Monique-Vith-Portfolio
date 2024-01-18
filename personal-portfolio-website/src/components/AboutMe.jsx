@@ -4,9 +4,27 @@ import '../App.css'
 import { useState, useEffect } from "react";
 
 function AboutMe() {
-    const [programming, setProgramming] = useState();
-    const [frameworks, setFrameworks] = useState();
-    const [personal, setPersonal] = useState();
+    const [programming, setProgramming] = useState(true);
+    const [frameworks, setFrameworks] = useState(false);
+    const [personal, setPersonal] = useState(false);
+
+    const showFrameworks = () => {
+        setProgramming(false)
+        setPersonal(false)
+        setFrameworks(true)
+    }
+
+    const showProgramming = () => {
+        setProgramming(true)
+        setPersonal(false)
+        setFrameworks(false)
+    }
+    
+    const showPersonal = () => {
+        setProgramming(false)
+        setFrameworks(false)
+        setPersonal(true)
+    }
 
     return (
         <>
@@ -72,21 +90,62 @@ function AboutMe() {
             </div>
 
             <div className="skills-categories">
-                <button className="programming-button">Programming</button>
-                <button className="frameworks-button">Frameworks & Tools</button>
-                <button className="personal-skills-button">Personal Skills</button>
+                <button className="programming-button" onClick={() => showProgramming()}>Programming</button>
+                <button className="frameworks-button" onClick={() => showFrameworks()}>Frameworks & Tools</button>
+                <button className="personal-skills-button" onClick={() => showPersonal()}>Personal Skills</button>
             </div>
             <div className="skills-descriptions">
-                <ul className="programming-qualifications">
-                    <li className="skills-text python-logo">Python</li>
-                    <li className="skills-text js-logo">Javascript</li>
-                    <li className="skills-text c-logo">C</li>
-                </ul>
-                <ul className="programming-qualifications">
-                    <li className="skills-text sql-logo">SQL/PosgreSQL</li>
-                    <li className="skills-text html-logo">HTML</li>
-                    <li className="skills-text css-logo">CSS</li>
-                </ul>
+                {
+                    programming && <>
+                    <ul className="programming-qualifications">
+                        <li className="skills-text python-logo">Python</li>
+                        <li className="skills-text js-logo">Javascript</li>
+                        <li className="skills-text c-logo">C</li>
+                    </ul>
+                    <ul className="programming-qualifications">
+                        <li className="skills-text sql-logo">SQL/PosgreSQL</li>
+                        <li className="skills-text html-logo">HTML</li>
+                        <li className="skills-text css-logo">CSS</li>
+                    </ul>
+                    </>
+                }
+                {
+                    frameworks && <>
+                    <ul className="frameworks-qualifications">
+                        <li className="skills-text vscode-logo">VScode</li>
+                        <li className="skills-text microsoft-logo">Microsoft Suites</li>
+                        <li className="skills-text github-logo">Github</li>
+                    </ul>
+                    <ul className="frameworks-qualifications">
+                        <li className="skills-text gitlab-logo">Gitlab</li>
+                        <li className="skills-text reactjs-logo">ReactJS</li>
+                        <li className="skills-text figma-logo">Figma</li>
+                    </ul>
+                    <ul className="frameworks-qualifications">
+                        <li className="skills-text materialui-logo">MaterialUI</li>
+                        <li className="skills-text canva-logo">Canva</li>
+                    </ul>
+                    </>
+                }
+                {
+                    personal && <>
+                    <ul className="personal-qualifications">
+                        <li className="personal-skills-text">Analytical & Strategic</li>
+                        <li className="personal-skills-text">Problem Solver</li>
+                        <li className="personal-skills-text">Organisation</li>
+                    </ul>
+                    <ul className="programming-qualifications">
+                        <li className="personal-skills-text">Communication</li>
+                        <li className="personal-skills-text">Leadership</li>
+                        <li className="personal-skills-text">Teamwork</li>
+                    </ul>
+                    <ul className="programming-qualifications">
+                        <li className="personal-skills-text">Sales</li>
+                        <li className="personal-skills-text">Multitasking</li>
+                        <li className="personal-skills-text">Attention to Detail</li>
+                    </ul>
+                    </>
+                }
             </div>
         </>
     )
