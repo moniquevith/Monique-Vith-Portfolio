@@ -4,26 +4,41 @@ import '../App.css'
 import { useState, useEffect } from "react";
 
 function AboutMe() {
+    const blue = "#0392F2"
+    const grey = "#3E3E42"
+    const [programmingButtonColor, setProgrammingButtonColor] = useState(blue)
+    const [frameworksButtonColor, setFrameworksButtonColor] = useState(grey)
+    const [personalButtonColor, setPersonalButtonColor] = useState(grey)
+
     const [programming, setProgramming] = useState(true);
     const [frameworks, setFrameworks] = useState(false);
     const [personal, setPersonal] = useState(false);
 
-    const showFrameworks = () => {
-        setProgramming(false)
+    const showFrameworks = (e) => {
+        setProgramming(false) 
         setPersonal(false)
         setFrameworks(true)
+        setFrameworksButtonColor(blue)
+        setPersonalButtonColor(grey)
+        setProgrammingButtonColor(grey)
     }
 
-    const showProgramming = () => {
+    const showProgramming = (event) => {
         setProgramming(true)
         setPersonal(false)
         setFrameworks(false)
+        setFrameworksButtonColor(grey)
+        setPersonalButtonColor(grey)
+        setProgrammingButtonColor(blue)
     }
     
     const showPersonal = () => {
         setProgramming(false)
         setFrameworks(false)
         setPersonal(true)
+        setFrameworksButtonColor(grey)
+        setPersonalButtonColor(blue)
+        setProgrammingButtonColor(grey)
     }
 
     return (
@@ -90,9 +105,9 @@ function AboutMe() {
             </div>
 
             <div className="skills-categories">
-                <button className="programming-button" onClick={() => showProgramming()}>Programming</button>
-                <button className="frameworks-button" onClick={() => showFrameworks()}>Frameworks & Tools</button>
-                <button className="personal-skills-button" onClick={() => showPersonal()}>Personal Skills</button>
+                <button className="programming-button" style={{backgroundColor: programmingButtonColor}} onClick={() => showProgramming()}>Programming</button>
+                <button className="frameworks-button" style={{backgroundColor: frameworksButtonColor}} onClick={() => showFrameworks()}>Frameworks & Tools</button>
+                <button className="personal-skills-button"  style={{backgroundColor: personalButtonColor}} onClick={() => showPersonal()}>Personal Skills</button>
             </div>
             <div className="skills-descriptions">
                 {
