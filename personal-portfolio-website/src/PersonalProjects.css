@@ -1,0 +1,66 @@
+.personal-projects-section {
+    display: flex;
+    flex-direction: row;
+    width: 1120px;
+}
+
+.personal-website-header {
+    color: var(--White, #FFF);
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    width: 514px;
+    height: 48px;
+}
+
+.project-image {
+    width: 550px;
+    height: 372px;
+}
+
+.personal-website-content {
+    width: 514px;
+    height: 372px;
+}
+
+.personal-project-description {
+    color: var(--White, #FFF);
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 514px;
+    height: 143px;
+}
+
+.languages-title {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.languages-text {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.pp-buttons {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 20px;
+    background: #0392F2;
+}

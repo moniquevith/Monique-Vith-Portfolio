@@ -1,7 +1,7 @@
 import React from "react";
 
 import '../App.css'
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function AboutMe() {
     const blue = "#0392F2"
@@ -40,7 +40,7 @@ function AboutMe() {
         setPersonalButtonColor(blue)
         setProgrammingButtonColor(grey)
     }
-
+ 
     return (
         <>
             <div className="about-me-description">
