@@ -55,7 +55,7 @@ function AboutMe() {
                     <button className="download-resume">Download Resume</button>
                 </div>
                 <div>
-                    <img className="headshot"/>
+                    <div className="headshot"></div>
                 </div>
             </div>
             <div className="experience-group-header">

@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     width: 1120px;
+    margin-bottom: 150px;
 }
 
 .personal-website-header {
@@ -18,6 +19,11 @@
 .project-image {
     width: 550px;
     height: 372px;
+    background: url('./personal-projects-images/personal-project.png');
+    background-repeat: no-repeat;
+    border: none;
+    margin-right: 50px;
+    background-size: cover;
 }
 
 .personal-website-content {
@@ -54,6 +60,25 @@
     line-height: normal;
 }
 
+.frameworks-title {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.frameworks-text {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
 .pp-buttons {
     color: #FFF;
     font-family: Inter;
@@ -63,4 +88,41 @@
     line-height: normal;
     border-radius: 20px;
     background: #0392F2;
+}
+
+.pp-button-section {
+    margin-top: 20px;
+    width: 377px;
+    height: 44px;
+}
+
+.calculator-image {
+    width: 550px;
+    height: 372px;
+    background: url('./personal-projects-images/calculator.png');
+    background-repeat: no-repeat;
+    border: none;
+    margin-right: 50px;
+    background-size: cover;
+}
+
+.seecode-button {
+    color: white;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 20px;
+    background: #67b37a;
+}
+
+.lol-image {
+    width: 550px;
+    height: 372px;
+    background: url('./personal-projects-images/leagueoflegends\ 1.png');
+    background-repeat: no-repeat;
+    border: none;
+    margin-right: 50px;
+    background-size: cover;
 }

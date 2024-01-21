@@ -30,6 +30,7 @@
     width: 1120px;
     align-items: flex-end;
     gap: 450px;
+    margin-bottom: 50px;
 }
 
 .sections {
@@ -122,6 +123,7 @@
 
 .headshot {
     background: url('./images/headshot.png');
+    background-repeat: no-repeat;
     border: none;
     width: 399.42px;
     height: 463.505px;
