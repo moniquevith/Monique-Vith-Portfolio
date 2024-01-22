@@ -2,6 +2,7 @@ import React from "react";
 
 import '../App.css'
 import { useState } from "react";
+import MoniqueVithResume from '../files/MoniqueVithResume.pdf';
 
 function AboutMe() {
     const blue = "#0392F2"
@@ -40,6 +41,16 @@ function AboutMe() {
         setPersonalButtonColor(blue)
         setProgrammingButtonColor(grey)
     }
+
+    const downloadCV = (url) => {
+      const filename = url.split('/').pop();
+      const aTag = document.createElement('a');
+      aTag.href = url;
+      aTag.setAttribute('download', filename);
+      document.body.appendChild(aTag);
+      aTag.click();
+      aTag.remove();
+    }
  
     return (
         <>
@@ -52,7 +63,7 @@ function AboutMe() {
                         <span className="intro-1">a Software Engineer Student.</span>
                     </div>
                     <p className="intro-3">I’m currently a 4th year student studying a Bachelors of Engineering (Honors) majoring in Software. I am passionate about learning new technologies, creating innovative solutions, and making a positive impact in society!</p>
-                    <button className="download-resume">Download Resume</button>
+                    <button className="download-resume" onClick={() => downloadCV(MoniqueVithResume)}>Download Resume</button>
                 </div>
                 <div>
                     <div className="headshot"></div>
