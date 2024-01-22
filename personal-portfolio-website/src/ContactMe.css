@@ -1,0 +1,87 @@
+.contactme-section {
+    width: 1120px;
+    height: 1024px;
+}
+
+.header {
+    width: 1120px;
+    text-align: center;
+    color: var(--White, #FFF);
+    font-family: Manrope;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.enquiries-section {
+    width: 1120px;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.online-enquiry-section {
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    height: 500px;
+    justify-content: space-between;
+}
+
+#online-enq-header {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact-details-section {
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    height: 800px;
+}
+
+#contact-details-header {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.input-online-enq {
+    background-color: #3E3E42;
+    border: none;
+    width: 550px;
+    height: 53px;
+    color: white;
+    font-family: inter;
+    font-size: 20px;
+}
+
+.input-online-enq::placeholder {
+    color: #A3A3A3;
+}
+
+.message-input {
+    height: 200px;
+}
+
+.contact-info {
+    text-align: center;
+    color: white;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
