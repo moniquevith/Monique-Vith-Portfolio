@@ -1,6 +1,7 @@
 import React from "react";
 
 import '../PersonalProjects.css'
+import { Link } from "react-router-dom";
 
 function PersonalProjects() {
     return (
@@ -14,7 +15,7 @@ function PersonalProjects() {
                     <div className="frameworks-title">Frameworks:  <span className="frameworks-text">ReactJS, MaterialUI .</span></div>
                     <div className="pp-button-section">
                         <button className="pp-buttons">Download Report</button>
-                        <button className="seecode-button">See Code</button>
+                        <span className="seecode-button"> <Link to="https://github.com/moniquevith/Personal-Portfolio-Website">See Code</Link></span>
                     </div>
                 </div>
             </div>
