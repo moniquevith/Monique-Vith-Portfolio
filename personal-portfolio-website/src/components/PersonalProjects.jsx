@@ -12,7 +12,7 @@ function PersonalProjects() {
                     <h2 className="personal-website-header">Personal Portfolio Website</h2>
                     <p className="personal-project-description">Description of the project here. Description of the project here. Description of the project here. Description of the project here. Description of the project here. Description of the project here. Description of the project here. </p>
                     <div className="languages-title">Languages: <span className="languages-text">JavaScript, HTML/CSS</span></div>
-                    <div className="frameworks-title">Frameworks:  <span className="frameworks-text">ReactJS, MaterialUI .</span></div>
+                    <div className="frameworks-title">Frameworks:  <span className="frameworks-text">ReactJS, Figma, VScode</span></div>
                     <div className="pp-button-section">
                         <button className="pp-buttons">Download Report</button>
                         <span className="seecode-button"> <Link to="https://github.com/moniquevith/Personal-Portfolio-Website">See Code</Link></span>

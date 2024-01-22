@@ -1,9 +1,11 @@
 import React from "react";
 
+import '../Blogs.css'
+
 function Blogs() {
     return (
         <>
-            blog page
+            <div className="blog-section">Coming Soon ...</div>
         </>
     )
 }
