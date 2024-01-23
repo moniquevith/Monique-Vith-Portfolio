@@ -4,37 +4,33 @@ import { useState, useEffect } from "react";
 import '../ContactMe.css'
 
 function ContactMe() {
+    // verify email format
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('')
     const [msg, setMsg] = useState('')
-    const [backendData, setBackendData] = useState([])
 
-    const submitForm = (e) => {
-        e.preventDefault();
-        const info = {name, email, phoneNumber, msg}
-        console.log(info)
-        fetch("/api")
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`Network response was not ok: ${response.status}`);
+    const submitForm = async () => {
+        const response = await fetch('http://localhost:5000/send/email', {
+            method: 'POST',
+            body: JSON.stringify({
+                name: name, 
+                email: email, 
+                phoneNumber: phoneNumber,
+                msg: msg
+            }),
+            headers: {
+                'Content-type': 'application/json',
             }
-            return response.json();
-        })
-        .then(data => {
-            console.log("Received data:", data);
-
-            // Assuming the data structure is { "users": ["userOne", "userTwo", "userThree"] }
-            if (data.users) {
-                setBackendData(data.users);
-            } else {
-                console.error("Unexpected data format:", data);
-            }
-        })
-        .catch(error => {
-            console.error("Error fetching data:", error);
         });
-    }
+        const data = await response.json();
+
+        if (data.error) {
+            alert(data.error);
+        } else {
+            console.log("email sent!")
+        }
+    } 
 
     return (
         <> 
