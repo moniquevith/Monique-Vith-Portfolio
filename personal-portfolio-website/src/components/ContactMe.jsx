@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import '../ContactMe.css'
 
 function ContactMe() {
@@ -8,15 +8,36 @@ function ContactMe() {
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('')
     const [msg, setMsg] = useState('')
+    const [backendData, setBackendData] = useState([])
 
     const submitForm = (e) => {
         e.preventDefault();
         const info = {name, email, phoneNumber, msg}
         console.log(info)
+        fetch("/api")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Network response was not ok: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log("Received data:", data);
+
+            // Assuming the data structure is { "users": ["userOne", "userTwo", "userThree"] }
+            if (data.users) {
+                setBackendData(data.users);
+            } else {
+                console.error("Unexpected data format:", data);
+            }
+        })
+        .catch(error => {
+            console.error("Error fetching data:", error);
+        });
     }
 
     return (
-        <>  
+        <> 
             <div className="contactme-section">
                 <div className="header">Contact me!</div>
                 <div className="enquiries-section">
