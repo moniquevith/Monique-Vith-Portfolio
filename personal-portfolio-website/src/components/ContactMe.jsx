@@ -11,24 +11,30 @@ function ContactMe() {
     const [msg, setMsg] = useState('')
 
     const submitForm = async () => {
-        const response = await fetch('http://localhost:5000/send/email', {
-            method: 'POST',
-            body: JSON.stringify({
-                name: name, 
-                email: email, 
-                phoneNumber: phoneNumber,
-                msg: msg
-            }),
-            headers: {
-                'Content-type': 'application/json',
-            }
-        });
-        const data = await response.json();
+        try {
+            const response = await fetch('http://localhost:5000/send/email', {
+                method: 'POST',
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    phoneNumber: phoneNumber,
+                    msg: msg
+                }),
+                headers: {
+                    'Content-type': 'application/json',
+                }
+            });
 
-        if (data.error) {
-            alert(data.error);
-        } else {
-            console.log("email sent!")
+            const data = await response.json();
+
+            if (response.ok) {
+                console.log("Email sent!");
+            } else {
+                alert(data);
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            alert(error);
         }
     } 
 

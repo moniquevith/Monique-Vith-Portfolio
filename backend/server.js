@@ -1,38 +1,50 @@
-const express = require("express")
-const app = express()
+const express = require("express");
+const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const cors = require("cors"); // Import cors package
+
+const app = express();
+
+app.use(bodyParser.json());
+app.use(cors()); // Enable CORS for all routes
 
 app.get("/api", (req, res) => {
-    res.json({ "users": ["userOne", "userTwo", "userThree"] })
-})
+    res.json({ "users": ["userOne", "userTwo", "userThree"] });
+});
 
 app.post("/send/email", async (req, res) => {
     const {name, email, phoneNumber, msg} = req.body;
+    const html = `
+        <p> enquiry from ${name} </p>
+        <p> given email: ${email} </p>
+        <p> given phone number: ${phoneNumber} </p>
+        <p> ${name} says: </p>
+        <p> ${msg} </p>
+    `;
 
     const transporter = nodemailer.createTransport({
-        host: "smtp.forwardemail.net",
-        port: 465,
-        secure: true,
+        service: "gmail",
+        host: "smtp.gmail.com",
+        port: 587,
         auth: {
-            // TODO: replace `user` and `pass` values from <https://forwardemail.net>
-            user: "emmitt35@ethereal.email",
-            pass: "44vCHxn2hwXfMKpd2n",
-        },
+            user: 'moniquevith1@gmail.com',
+            pass: 'xsoa puhg rhxl idtk'
+        }
     });
-    
-    const message = {
-        from: '"The Express App" <theExpressApp@example.com>', // sender address
-        to: "moniquevith1@gmail.com", // list of receivers
-        subject: "Hello", // Subject line
-        text: "Hello world?", // plain text body
-    }
 
-    // send mail with defined transport object
-    let info = await transporter.sendMail({ message });
-    
-    console.log("Message sent: %s", info.messageId);
+    const info = await transporter.sendMail({
+        from: {
+            name: name,
+            address: "moniquevith1@gmail.com",
+        },
+        to: 'moniquevith1@gmail.com',
+        subject: 'New Enquiry',
+        html: html,
+    })
 
-    res.send("email sent!")
-})
+    console.log("message sent!")
+});
 
-app.listen(5000, () => { console.log("server started on port http://localhost:5000") })
+app.listen(5000, () => {
+    console.log("server started on port http://localhost:5000");
+});
