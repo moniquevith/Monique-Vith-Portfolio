@@ -60,13 +60,13 @@ function ContactMe() {
                     </form>
                     <div className="contact-details-section">
                         <h2 id="contact-details-header">Contact Details</h2>
-                        <h3 className="contact-info">Email</h3>
+                        <h3 className="contact-info sub-title">Email</h3>
                         <p className="contact-info">moniquevith1@gmail.com</p>
-                        <h3 className="contact-info">Phone Number</h3>
+                        <h3 className="contact-info sub-title">Phone Number</h3>
                         <p className="contact-info">0466 372 776</p>
-                        <h3 className="contact-info">Social Media</h3>
-                        <a className="contact-info" href="https://www.linkedin.com/in/moniquevith/">https://www.linkedin.com/in/moniquevith/</a>
-                        <a className="contact-info" href="https://github.com/moniquevith">https://github.com/moniquevith</a>
+                        <h3 className="contact-info sub-title">Social Media</h3>
+                        <a className="contact-info contact-links" href="https://www.linkedin.com/in/moniquevith/">https://www.linkedin.com/in/moniquevith/</a>
+                        <a className="contact-info contact-links" href="https://github.com/moniquevith">https://github.com/moniquevith</a>
                     </div>
                 </div>
             </div>

@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: column;
     width: 560px;
-    height: 500px;
+    height: 600px;
     justify-content: space-between;
 }
 
@@ -35,7 +35,7 @@
     color: var(--White, #FFF);
     text-align: center;
     font-family: Manrope;
-    font-size: 24px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -52,7 +52,7 @@
     color: var(--White, #FFF);
     text-align: center;
     font-family: Manrope;
-    font-size: 24px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -79,11 +79,11 @@
 
 .contact-info {
     text-align: center;
-    color: white;
+    color: #A3A3A3;
     font-family: Manrope;
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
 }
 
@@ -98,3 +98,18 @@
     width: 100px;
     border-radius: 20px;
 }
+
+.sub-title {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-links {
+    text-decoration: none;
+}
+
+.contact-links:hover {
+    color: white;
+}
+
