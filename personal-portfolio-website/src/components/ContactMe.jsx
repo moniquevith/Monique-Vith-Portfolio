@@ -1,40 +1,47 @@
 import React from "react";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import '../ContactMe.css'
 
 function ContactMe() {
-    // verify email format
+    const checkValidPhoneNumber = (number) => {
+        return number.match('^[0-9]{10}$');
+    }
+
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('')
     const [msg, setMsg] = useState('')
 
     const submitForm = async () => {
-        try {
-            const response = await fetch('http://localhost:5000/send/email', {
-                method: 'POST',
-                body: JSON.stringify({
-                    name: name,
-                    email: email,
-                    phoneNumber: phoneNumber,
-                    msg: msg
-                }),
-                headers: {
-                    'Content-type': 'application/json',
+        if (checkValidPhoneNumber(phoneNumber) && name !== '' && email !== '' && phoneNumber !== '' && msg !== '') {
+            try {
+                const response = await fetch('http://localhost:5000/send/email', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        phoneNumber: phoneNumber,
+                        msg: msg
+                    }),
+                    headers: {
+                        'Content-type': 'application/json',
+                    }
+                });
+    
+                const data = await response.json();
+    
+                if (response.ok) {
+                    console.log("Email sent!");
+                } else {
+                    alert(data);
                 }
-            });
-
-            const data = await response.json();
-
-            if (response.ok) {
-                console.log("Email sent!");
-            } else {
-                alert(data);
+            } catch (error) {
+                console.error("Error submitting form:", error);
+                alert(error);
             }
-        } catch (error) {
-            console.error("Error submitting form:", error);
-            alert(error);
+        } else {
+            alert("invalid inputs")
         }
     } 
 

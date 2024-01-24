@@ -121,12 +121,21 @@
     line-height: normal;
 }
 
+.download-resume:hover {
+    background-color: #0392F2;
+}
+
 .headshot {
     background: url('./images/headshot.png');
+    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
     border: none;
-    width: 399.42px;
-    height: 463.505px;
+    width: 400px;
+    height: 400px;
+    border: 2.5px #A3A3A3 solid;
+    border-radius: 2000px;
+    background-color: white;
 }
 
 .separator {

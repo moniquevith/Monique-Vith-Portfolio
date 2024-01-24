@@ -14,6 +14,7 @@
     line-height: normal;
     width: 514px;
     height: 48px;
+    margin: 0;
 }
 
 .project-image {
@@ -88,6 +89,12 @@
     line-height: normal;
     border-radius: 20px;
     background: #0392F2;
+    padding: 5px 10px 5px 10px;
+}
+
+.pp-buttons:hover {
+    background-color: white;
+    color: black;
 }
 
 .pp-button-section {
@@ -107,6 +114,7 @@
 }
 
 .seecode-button {
+    padding: 5px 10px 5px 10px;
     color: white;
     font-family: Inter;
     font-size: 20px;
@@ -115,6 +123,12 @@
     line-height: normal;
     border-radius: 20px;
     background: #67b37a;
+    text-decoration: none;
+}
+
+.seecode-button:hover {
+    background-color: white;
+    color: black;
 }
 
 .lol-image {
@@ -125,4 +139,11 @@
     border: none;
     margin-right: 50px;
     background-size: cover;
+}
+
+.separator {
+    width: 132px;
+    height: 4px;
+    background-color: #0392F2;
+    margin-bottom: 10px;
 }
