@@ -103,14 +103,15 @@
     height: 44px;
 }
 
-.calculator-image {
+.tic-tac-toe-image {
     width: 550px;
     height: 372px;
-    background: url('./personal-projects-images/calculator.png');
+    background: url('./personal-projects-images/tictactoe-game.PNG');
     background-repeat: no-repeat;
     border: none;
     margin-right: 50px;
     background-size: cover;
+    border: 1px white solid;
 }
 
 .seecode-button {
