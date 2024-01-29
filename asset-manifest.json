@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Monique-Vith-Portfolio/static/css/main.a6e7a416.css",
+    "main.js": "/Monique-Vith-Portfolio/static/js/main.b8522bb3.js",
+    "static/js/787.8a7daafc.chunk.js": "/Monique-Vith-Portfolio/static/js/787.8a7daafc.chunk.js",
+    "static/media/MoniqueVithPortfolioWebsiteReport.pdf": "/Monique-Vith-Portfolio/static/media/MoniqueVithPortfolioWebsiteReport.c91d8bff698cac1c5e95.pdf",
+    "static/media/headshot.png": "/Monique-Vith-Portfolio/static/media/headshot.e49f25d3f6a35d825966.png",
+    "static/media/personal-project.png": "/Monique-Vith-Portfolio/static/media/personal-project.2bd46855704654ffcac4.png",
+    "static/media/Python-logo-notext.svg.png": "/Monique-Vith-Portfolio/static/media/Python-logo-notext.svg.dea924d737bb84eb9ce3.png",
+    "static/media/Postgresql_elephant.svg.png": "/Monique-Vith-Portfolio/static/media/Postgresql_elephant.svg.4a8c66c90ba3b5e27f7c.png",
+    "static/media/javascript-logo-png.png": "/Monique-Vith-Portfolio/static/media/javascript-logo-png.4562659521861a5e703f.png",
+    "static/media/MoniqueVithResume.pdf": "/Monique-Vith-Portfolio/static/media/MoniqueVithResume.846277f168479ce46acc.pdf",
+    "static/media/C_Programming_Language.svg.png": "/Monique-Vith-Portfolio/static/media/C_Programming_Language.svg.bf0af88d24cd724c83bc.png",
+    "static/media/FitnessForumLogo.png": "/Monique-Vith-Portfolio/static/media/FitnessForumLogo.173221af788065f25826.png",
+    "static/media/Robogals_Logo.svg.png": "/Monique-Vith-Portfolio/static/media/Robogals_Logo.svg.95d06151888390c6fdb9.png",
+    "static/media/tictactoe-game.PNG": "/Monique-Vith-Portfolio/static/media/tictactoe-game.b585ec131a0a8a6e7821.PNG",
+    "index.html": "/Monique-Vith-Portfolio/index.html",
+    "main.a6e7a416.css.map": "/Monique-Vith-Portfolio/static/css/main.a6e7a416.css.map",
+    "main.b8522bb3.js.map": "/Monique-Vith-Portfolio/static/js/main.b8522bb3.js.map",
+    "787.8a7daafc.chunk.js.map": "/Monique-Vith-Portfolio/static/js/787.8a7daafc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6e7a416.css",
+    "static/js/main.b8522bb3.js"
+  ]
+}
