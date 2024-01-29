@@ -55,6 +55,7 @@ function AboutMe() {
         <>
             <div className="about-me-description">
                 <div className="about-me-text">
+                    <div className="welcome-header">THIS IS A TEST</div>
                     <div className="welcome-header">WELCOME TO MY WORLD</div>
                     <div>
                         <span className="intro-1">Hi, I’m </span>
