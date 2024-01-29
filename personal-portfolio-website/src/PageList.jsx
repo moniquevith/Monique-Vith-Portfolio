@@ -16,6 +16,7 @@ function PageList() {
                 <br />
                 <Routes>
                     <Route path="/" element={<AboutMe />} />
+                    <Route path="/Monique-Vith-Portfolio" element={<AboutMe />} />
                     <Route path="/personal/projects" element={<PersonalProjects />}/>
                     <Route path="/blogs" element={<Blogs />}/>
                     <Route path="/contact/me" element={<ContactMe />}/>
