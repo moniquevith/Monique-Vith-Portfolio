@@ -14,6 +14,7 @@ function PageList() {
             <div className="application">
                 <Navigation />
                 <br />
+                <p>hi</p>
                 <Routes>
                     <Route path="/" element={<AboutMe />} />
                     <Route path="/Monique-Vith-Portfolio" element={<Navigate to="/" replace />} />
