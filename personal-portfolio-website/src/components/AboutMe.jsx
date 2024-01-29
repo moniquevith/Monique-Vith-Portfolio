@@ -15,7 +15,7 @@ function AboutMe() {
     const [frameworks, setFrameworks] = useState(false);
     const [personal, setPersonal] = useState(false);
 
-    const showFrameworks = (e) => {
+    const showFrameworks = () => {
         setProgramming(false) 
         setPersonal(false)
         setFrameworks(true)
@@ -24,7 +24,7 @@ function AboutMe() {
         setProgrammingButtonColor(grey)
     }
 
-    const showProgramming = (event) => {
+    const showProgramming = () => {
         setProgramming(true)
         setPersonal(false)
         setFrameworks(false)
@@ -43,10 +43,9 @@ function AboutMe() {
     }
 
     const downloadCV = (url) => {
-      const filename = url.split('/').pop();
       const aTag = document.createElement('a');
       aTag.href = url;
-      aTag.setAttribute('download', filename);
+      aTag.setAttribute('download', "Monique Vith's Resume");
       document.body.appendChild(aTag);
       aTag.click();
       aTag.remove();

@@ -99,6 +99,11 @@
     border-radius: 20px;
 }
 
+.submit-form:hover {
+    background-color: white;
+    color: black;
+}
+
 .sub-title {
     color: white;
     font-size: 20px;

@@ -1,9 +1,8 @@
 import React from "react";
 
-import { useState } from "react";
 import '../PersonalProjects.css';
 import { Link } from "react-router-dom";
-import WebsiteReport from '../files/PersonalBlogWebsiteSLDCReport.pdf';
+import WebsiteReport from '../files/MoniqueVithPortfolioWebsiteReport.pdf';
 
 function PersonalProjects() {
     const DownloadReport = (url) => {
@@ -27,7 +26,6 @@ function PersonalProjects() {
                     <div className="frameworks-title">Tools & Frameworks:  <span className="frameworks-text">ReactJS, Figma, VScode, NodeJS/Express, Nodemailer</span></div>
                     <div className="pp-button-section">
                         <button className="pp-buttons" onClick={() => DownloadReport(WebsiteReport)}>Download Report</button>
-                        <Link className="seecode-button" to="https://github.com/moniquevith/Personal-Portfolio-Website">See Code</Link>
                     </div>
                 </div>
             </div>
