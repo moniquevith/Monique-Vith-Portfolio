@@ -1,7 +1,6 @@
 import React from "react";
 import './App.css'
 
-// import { Routes, Route, Link, useNavigate, Router } from 'react-router-dom';
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import AboutMe from "./components/AboutMe";
 import Navigation from "./components/Navigation";
@@ -15,12 +14,12 @@ function PageList() {
             <div className="application">
                 <Navigation />
                 <br />
-                <AboutMe />
                 <Routes>
                     <Route path="/" element={<AboutMe />} />
-                    <Route path="/personal/projects" element={<PersonalProjects />}/>
-                    <Route path="/blogs" element={<Blogs />}/>
-                    <Route path="/contact/me" element={<ContactMe />}/>
+                    <Route path="/Monique-Vith-Portfolio" element={<AboutMe />} />
+                    <Route path="/personal/projects" element={<PersonalProjects />} />
+                    <Route path="/blogs" element={<Blogs />} />
+                    <Route path="/contact/me" element={<ContactMe />} />
                 </Routes>
             </div>
         </>
