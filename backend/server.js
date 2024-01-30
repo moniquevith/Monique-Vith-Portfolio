@@ -1,7 +1,13 @@
+const dotenv = require('dotenv');
+dotenv.config();
+
+const smtpCredentials = JSON.parse(process.env.smtpConfig);
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const cors = require("cors"); // Import cors package
+
 
 const app = express();
 
@@ -22,15 +28,7 @@ app.post("/send/email", async (req, res) => {
         <p> ${msg} </p>
     `;
 
-    const transporter = nodemailer.createTransport({
-        service: "gmail",
-        host: "smtp.gmail.com",
-        port: 587,
-        auth: {
-            user: 'moniquevith1@gmail.com',
-            pass: 'xsoa puhg rhxl idtk'
-        }
-    });
+    const transporter = nodemailer.createTransport(smtpCredentials);
 
     const info = await transporter.sendMail({
         from: {
