@@ -1,6 +1,5 @@
 const dotenv = require('dotenv');
 dotenv.config();
-
 const smtpCredentials = JSON.parse(process.env.smtpConfig);
 
 const express = require("express");
@@ -8,15 +7,10 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const cors = require("cors"); // Import cors package
 
-
 const app = express();
 
 app.use(bodyParser.json());
 app.use(cors()); // Enable CORS for all routes
-
-app.get("/api", (req, res) => {
-    res.json({ "users": ["userOne", "userTwo", "userThree"] });
-});
 
 app.post("/send/email", async (req, res) => {
     const {name, email, phoneNumber, msg} = req.body;
