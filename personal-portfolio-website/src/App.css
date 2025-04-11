@@ -493,7 +493,7 @@
 }
 
 .css-logo {
-    background-image: url(./images/CSS-Logo\ 1.png);
+    /* background-image: url(./images/CSS-Logo\ 1.png); */
     background-repeat: no-repeat; 
     background-position: left;
     background-size: 30px;
@@ -515,7 +515,7 @@
 }
 
 .microsoft-logo {
-    background-image: url(./images/Microsoft_icon\ 1.png);
+    /* background-image: url(./images/Microsoft_icon\ 1.png); */
     background-repeat: no-repeat; 
     background-position: left;
     background-size: 30px;
@@ -539,7 +539,7 @@
 }
 
 .reactjs-logo {
-    background-image: url(./images/React-icon\ 1.png);
+    /* background-image: url(./images/React-icon\ 1.png); */
     background-repeat: no-repeat; 
     background-position: left;
     background-size: 30px;

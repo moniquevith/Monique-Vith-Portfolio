@@ -76,6 +76,17 @@ function AboutMe() {
                 <div className="FF-flex-box">
                     <div className="FF-header">
                         <div className="FF-logo"></div>
+                        <div className="FF-title">Atlassian</div>
+                    </div>
+                    <div className="FF-role">Software Engineer Intern</div>
+                    <ul className="FF-role-descrriptions">
+                        <li className="FF-description">Generating new sales opportunities by approaching walk-ins, cold calling, networking and marketing.</li>
+                        <li className="FF-description">Preparing regular reports for the sales manager summarising progress against KPIs</li>
+                    </ul>
+                </div>
+                <div className="FF-flex-box">
+                    <div className="FF-header">
+                        <div className="FF-logo"></div>
                         <div className="FF-title">Fitness Forum Health Club</div>
                     </div>
                     <div className="FF-role">Sales/Receptionist</div>
