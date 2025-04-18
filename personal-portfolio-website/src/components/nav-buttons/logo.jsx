@@ -1,9 +1,12 @@
-function portfolioLogo() {
+import React from "react"
+import './nav.css'
+
+function PortfolioLogo() {
     return (
         <>
-            <p>VITH</p>
+            <p className="LOGO">VITH.</p>
         </>
     )
 }
 
-export default portfolioLogo
+export default PortfolioLogo

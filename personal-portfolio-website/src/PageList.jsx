@@ -7,12 +7,16 @@ import Navigation from "./components/nav-buttons/Navigation";
 import PersonalProjects from "./components/PersonalProjects";
 import ContactMe from "./components/ContactMe";
 import Blogs from "./components/Blogs";
+import AboutPage from "./components/About/AboutPage";
+import Description from "./components/Description/description";
 
 function PageList() {
     return (
         <>
             <div className="application">
                 <Navigation />
+                <AboutPage />
+                <Description />
                 <br />
                 <Routes>
                     

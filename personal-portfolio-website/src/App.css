@@ -27,7 +27,7 @@
 
 .nav-bar {
     display: flex;
-    width: 1120px;
+    width: 80%;
     align-items: flex-end;
     gap: 450px;
     margin-bottom: 50px;

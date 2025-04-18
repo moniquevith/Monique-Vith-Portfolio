@@ -1,26 +1,19 @@
 import React from "react";
-import '../App.css';
-import '/logo.jsx';
-
-import { Link } from "react-router-dom";
+import PortfolioLogo from './logo.jsx'
+import AboutMee from "./aboutMe.jsx";
+import Projects from "./projects.jsx";
+import ContactMee from "./contactMe.jsx";
 
 function Navigation() {
     return (
-        <>
-
         <div className="nav-bar">
-            <div>
-                <span className="m-logo">M</span>
-                <span className="v-logo">vith</span>
-            </div>
-            <div className="sections">
-                <span> <Link to="/" className="section-buttons">About me</Link></span>
-                <span> <Link to="/personal/projects" className="section-buttons">Personal Projects</Link></span>
-                <span> <Link to="/blogs" className="section-buttons">Blogs</Link></span>
-                <span> <Link to="/contact/me" className="section-buttons blue">Contact me</Link></span>
+            <PortfolioLogo />
+            <div className="nav-buttons">
+                <AboutMee />
+                <Projects />
+                <ContactMee />
             </div>
         </div>
-        </>
     )
 }
 
