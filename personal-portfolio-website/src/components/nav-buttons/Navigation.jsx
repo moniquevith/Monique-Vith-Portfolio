@@ -1,11 +1,13 @@
 import React from "react";
 import '../App.css';
+import '/logo.jsx';
 
 import { Link } from "react-router-dom";
 
 function Navigation() {
     return (
         <>
+
         <div className="nav-bar">
             <div>
                 <span className="m-logo">M</span>
