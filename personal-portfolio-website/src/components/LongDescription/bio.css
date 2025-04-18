@@ -2,4 +2,49 @@
     background-color: white;
     height: 90vh;
     width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bio-content {
+    height: 90vh;
+    width: 70vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+}
+
+.bio-header {
+    display: flex;
+    justify-content: center;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    margin: 10vh 0 0 0
+}
+
+.bio-box {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.dragon-picking {
+    height: 50vh;
+    width: 21vw;
+}
+
+.bio-descript {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
 }
