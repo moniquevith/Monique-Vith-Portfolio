@@ -110,6 +110,48 @@
     animation: animate 5s linear infinite;
 }
 
+.about-page-box div:nth-child(11) {
+    top: 55%;
+    left: 10%;
+    animation: animate 4s linear infinite;
+}
+
+.about-page-box div:nth-child(12) {
+    top: 43%;
+    left: 70%;
+    animation: animate 11s linear infinite;
+}
+
+.about-page-box div:nth-child(13) {
+    top: 20%;
+    left: 79%;
+    animation: animate 17s linear infinite;
+}
+
+.about-page-box div:nth-child(14) {
+    top: 82%;
+    left: 91%;
+    animation: animate 5s linear infinite;
+}
+
+.about-page-box div:nth-child(15) {
+    top: 39%;
+    left: 30%;
+    animation: animate 7s linear infinite;
+}
+
+.about-page-box div:nth-child(16) {
+    top: 75%;
+    left: 33%;
+    animation: animate 9s linear infinite;
+}
+
+.about-page-box div:nth-child(17) {
+    top: 12%;
+    left: 95%;
+    animation: animate 5s linear infinite;
+}
+
 @keyframes animate {
     0% {
         transform: scale(0) translateY(0) rotate(0);
