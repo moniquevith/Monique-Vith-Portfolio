@@ -15,7 +15,7 @@
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 6rem;
+    font-size: 9rem;
 }
 
 .intro-text {
@@ -31,8 +31,13 @@
     font-size: 2rem;
 }
 
-.yellow {
-    color: #ffffa3;
+.purple {
+    color: #e0c6fe;
+    font-weight: 500;
+}
+
+.blue {
+    color: #c0edff;
     font-weight: 500;
 }
 
@@ -41,7 +46,7 @@
     width: 80px;
     height: 80px;
     background-color: transparent;
-    border: 6px solid #ffffa3;
+    border: 6px solid #e0c6fe;
     border-radius: 50%;
 }
 

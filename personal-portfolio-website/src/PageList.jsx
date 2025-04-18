@@ -7,8 +7,9 @@ import Navigation from "./components/nav-buttons/Navigation";
 import PersonalProjects from "./components/PersonalProjects";
 import ContactMe from "./components/ContactMe";
 import Blogs from "./components/Blogs";
-import AboutPage from "./components/About/AboutPage";
-import Description from "./components/Description/description";
+import AboutPage from "./components/TitlePage/AboutPage";
+import Description from "./components/ShortDescription/description";
+import Bio from "./components/LongDescription/Bio";
 
 function PageList() {
     return (
@@ -17,6 +18,7 @@ function PageList() {
                 <Navigation />
                 <AboutPage />
                 <Description />
+                <Bio />
                 <br />
                 <Routes>
                     

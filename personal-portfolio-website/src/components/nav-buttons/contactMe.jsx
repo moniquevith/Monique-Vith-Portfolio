@@ -3,7 +3,7 @@ import './nav.css'
 
 function ContactMee() {
     return (
-        <p className="nav-font yellow">Get in Touch</p>
+        <p className="nav-font purple">Get in Touch</p>
     )
 }
 
